@@ -1,0 +1,393 @@
+main.site-page {
+    section.banner-page {
+        background: linear-gradient($branco 15%, $azul 15%);
+        div.container {
+            position: relative;
+        }
+        figure.banner {
+            padding: 30px 0 150px;
+            img {
+                max-width: 1000px;
+            }
+        }
+        section.anuncie-gratis {
+            bottom: 50px;
+            position: absolute;
+            right: 50px;
+            form.form-anuncio {
+                max-width: 370px;
+            }
+        }
+    }
+
+    section.descricao-pagina {
+        padding: 50px 0 100px;
+        h1, h2, h3, h4, p {
+            flex: 1 1 100%;
+            margin: 0;
+        }
+        h1 {
+            &::before {
+                background: $vermelho;
+                content: '';
+                display: block;
+                height: 20px;
+                left: 50%;
+                position: absolute;
+                top: 0;
+                transform: translateX(-50%);
+                width: 370px;
+            }
+            font: bold 40px/42px $fonte_padrao;
+            padding: 40px;
+            position: relative;
+            text-align: center;
+        }
+        figure.icon {
+            margin-top: 100px;
+            max-width: 72px;
+        }
+        h2 {
+            font: 600 48px/60px $fonte_padrao;
+        }
+        h3 {
+            margin-top: 50px;
+            font: 600 26px/36px $fonte_padrao;
+        }
+        p {
+            font: normal 22px/30px $fonte_padrao;
+        }
+        div.lista-detalhes {
+            flex: 1 1 100%;
+            margin-top: 30px;
+            div.detalhe {
+                align-items: center;
+                flex: 0 1 50%;
+                margin: 0 0 40px;
+                figure.icon {
+                    margin: 0 20px 0 0;
+                }
+                .text {
+                    flex: 0 1 75%;
+                    h4 {
+                        font: 600 16px/20px $fonte_padrao;
+                    }
+                    p {
+                        font: normal 16px/20px $fonte_padrao;
+                    }
+                }
+            }
+        }
+        div.timeline {
+            flex: 1 1 100%;
+            position: relative;
+            &::before {
+                background: #A1A1A1;
+                content: '';
+                display: block;
+                height: 2px;
+                position: absolute;
+                top: 45%;
+                transform: translateY(-50%);
+                width: 100%;
+                z-index: -1;
+            }
+            div.dots {
+                span {
+                    background: $azul;
+                    border-radius: 50%;
+                    color: $branco;
+                    display: block;
+                    font: 600 50px/120px $fonte_padrao;
+                    height: 120px;
+                    margin-top: 50px;
+                    text-align: center;
+                    width: 120px;
+                }
+                p {
+                    font: 600 22px/26px $fonte_padrao;
+                    margin-top: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    section.opcao-atendimento {
+        border: 0;
+    }
+
+    section.fale-especialista {
+        padding: 100px 0;
+        div.alerta {
+            background: $azul;
+            border-radius: 40px;
+            color: $branco;
+            margin: 0 0 100px;
+            padding: 50px 100px;
+            h4, p {
+                flex: 1 1 100%;
+            }
+            h4 {
+                font: 600 26px $fonte_padrao;
+                margin-bottom: 30px;
+            }
+            p {
+                font: normal 20px/24px $fonte_padrao;
+            }
+            div.botoes {
+                flex: 1 1 100%;
+                margin: 50px 0 -70px;
+                a {
+                    border: 0 none;
+                    border-radius: 10px;
+                    font: 600 20px/28px $fonte_padrao;
+                    padding: 10px 30px;
+                    &.btn-success {background-color: $verde; &:hover {background: darken($verde, 10%);}}
+                    &.btn-danger {background-color: $vermelho;&:hover {background: darken($vermelho, 10%);}}
+                }
+            }
+        }
+        h2 {
+            font: 300 40px/45px $fonte_padrao;
+            margin-bottom: 30px;
+            strong {
+                font-weight: 600;
+            }
+        }
+        p {
+            font: normal 22px/32px $fonte_padrao;
+        }
+        table {
+            margin: 0 auto;
+            width: 100%;
+            tr {
+                border-bottom: 1px solid #A1A1A1;
+                td {
+                    font: 600 25px/45px $fonte_padrao;
+                    padding: 15px 20px;
+                    figure {
+                        max-width: 70px;
+                    }
+                    i {
+                        background: $azul;
+                        border-radius: 50%;
+                        color: $branco;
+                        font-size: 30px;
+                        line-height: 50px;
+                        height: 50px;
+                        margin-left: 10px;
+                        text-align: center;
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    section.galeria {
+        margin: 150px 0 100px;
+    }
+
+    section.faqs {
+        margin-bottom: 200px;
+        h2 {
+            font: 600 40px/50px $fonte_padrao;
+        }
+        h3 {
+            font: normal 40px/50px $fonte_padrao;
+        }
+
+        div.accordion {
+            margin-top: 50px;
+            div.accordion-item {
+                border: 0 none;
+                button {
+                    border: 0 none;
+                    box-shadow: none;
+                    font: 900 16px/24px $fonte_padrao;
+                    transition: all .25s ease;
+                    &::after { display: none; }
+                    &:not(.collapsed) {
+                        background: transparent;
+                        color: $azul;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    &:hover {
+                        color: $azul;
+                    }
+                    i {
+                        font-size: 30px;
+                        margin-right: 10px;
+                        transition: all .25s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    main.site-page {
+        section.banner-page {
+            figure.banner {
+                img {
+                    max-width: 600px;
+                    transform: scaleX(-1);
+                }
+            }
+            section.anuncie-gratis {
+                form.form-anuncio {
+                    max-width: 300px;
+                }
+            }
+        }
+
+        section.descricao-pagina {
+            figure.icon {
+                margin-top: 40px;
+            }
+            div.lista-detalhes {
+                div.detalhe {
+                    .text {
+                        flex: 0 1 70%;
+                    }
+                }
+            }
+            div.timeline {
+                &::before {
+                    left: 50%;
+                    top: 35%;
+                    transform: translate(-50%, -50%);
+                    width: 90%;
+                }
+                div.dots {
+                    flex: 0 1 16.6666667%;
+                    span {
+                        font-size: 40px;
+                        height: 80px;
+                        line-height: 80px;
+                        margin: 30px auto 0;
+                        width: 80px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        section.fale-especialista {
+            div.alerta {
+                padding: 50px 70px;
+            }
+        }
+
+        section.galeria {
+            margin: 50px 0 0;
+            a.imagem-galeria-link {
+                flex: 0 1 49%;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    main.site-page {
+        section.banner-page {
+            background: linear-gradient($branco 15%, $azul 15%, $azul 80%, $branco 80%);
+            figure.banner {
+                margin: 0 0 -50px;
+                padding: 30px 0 20px;
+                img {
+                    max-width: 100%;
+                    transform: scaleX(1);
+                }
+            }
+            section.anuncie-gratis {
+                bottom: 0;
+                left: 0;
+                position: relative;
+                z-index: 10;
+                form.form-anuncio {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        section.descricao-pagina {
+            padding: 100px 0;
+            h1 {
+                &::before {
+                    max-width: 300px;
+                }
+            }
+            div.lista-detalhes {
+                div.detalhe {
+                    flex: 1 1 100%;
+                }
+            }
+            div.timeline {
+                flex-wrap: wrap;
+                &::before {
+                    display: none;
+                }
+                div.dots {
+                    flex: 1 1 100%;
+                    margin: 20px 0 30px;
+                    span {
+                        margin: 0 auto;
+                    }
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        section.fale-especialista {
+            div.alerta {
+                padding: 50px;
+            }
+        }
+
+        section.fale-especialista {
+            div.alerta {
+                div.botoes {
+                    margin: 30px 0 -100px;
+                    a {
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+
+        section.fale-especialista {
+            table {
+                tr {
+                    td {
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+        section.galeria {
+            margin: 50px 0 0;
+            a.imagem-galeria-link {
+                flex: 0 1 49%;
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+header.site-header {
+    background: $branco;
+    padding: 20px 0;
+    .site-logo {
+        max-width: 270px;
+    }
+    nav.navbar {
+        a.phone-button {
+            border-radius: 100px;
+            color: $preto;
+            font-size: 25px;
+            line-height: 48px;
+            height: 50px;
+            margin-right: 20px;
+            text-align: center;
+            width: 50px;
+            &:hover {
+                background: $preto;
+                color: $branco;
+            }
+        }
+        ul.menu {
+            margin-right: 20px;
+            li.list-group-item {
+                border: 0 none;
+                margin: 0 10px;
+                a {
+                    color: $preto;
+                    font: normal 18px $fonte_padrao;
+                    text-transform: uppercase;
+                    i {
+                        margin-right: 10px;
+                    }
+                    &:hover {
+                        color: $azul;
+                    }
+                }
+            }
+        }
+        div.acesso {
+            a.login-button {
+                border-width: 3px;
+                font: bold 18px $fonte_padrao;
+                margin-right: 20px;
+            }
+            button.menu-suspenso-button {
+                border: 0 none;
+                color: $preto;
+                padding: .65rem 1rem;
+                transition: all .25s ease;
+                &.ativo {
+                    border-radius: 0.375rem 0.375rem 0 0;
+                    background: $preto;
+                    color: $branco;
+                }
+                &:hover {
+                    background: $preto;
+                    color: $branco;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            div.menu-suspenso {
+                display: none;
+                position: absolute;
+                right: 0;
+                ul {
+                    li {
+                        border: 0 none;
+                        padding: 0;
+                        a {
+                            background: $preto;
+                            color: $branco;
+                            display: block;
+                            padding: 10px 35px;
+                            &:hover {
+                                background: $azul;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header.site-header {
+        .site-logo {
+            margin: 0 auto 20px;
+        }
+        nav.navbar {
+            a.phone-button {
+                margin: 0;
+            }
+            ul.menu {
+                flex: 0 1 80%;
+                margin: 0;
+            }
+            div.acesso {
+                margin: 20px auto 0;
+                position: relative;
+                div.menu-suspenso {
+                    min-width: 200px;
+                    z-index: 10;
+                    ul {
+                        li {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header.site-header {
+        .site-logo {
+            margin: 0 auto 20px;
+        }
+        nav.navbar {
+            max-width: 100%;
+            a.phone-button {
+                margin: 0 auto;
+            }
+            ul.menu {
+                flex: 1 1 100%;
+                flex-wrap: wrap;
+                margin: 20px 0 10px;
+                li {
+                    flex: 1 1 100%;
+                    margin: 10px auto;
+                    text-align: center;
+                }
+            }
+            div.acesso {
+                margin: 20px auto 0;
+                position: relative;
+                div.menu-suspenso {
+                    min-width: 200px;
+                    ul {
+                        li {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

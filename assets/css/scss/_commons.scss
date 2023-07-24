@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a, button {
+    text-decoration: none;
+    transition: all .25s ease;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style-position:inside;
+    margin: 0;
+    padding: 0;
+}
+
+div.small-container {
+    margin: 0 auto;
+    max-width: 770px;
+}

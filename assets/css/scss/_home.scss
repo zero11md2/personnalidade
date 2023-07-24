@@ -1,0 +1,445 @@
+main.site-main {
+    section.banner-principal {
+        background: linear-gradient($azul 80%, $branco 80%);
+        figure.banner {
+            padding: 100px 0;
+            position: relative;
+            text-align: right;
+            img {
+                max-width: 925px;
+            }
+            figcaption {
+                background: $branco;
+                color: $preto;
+                font: bold 66px/70px $fonte_padrao;
+                height: 440px;
+                padding: 43px 32px;
+                position: absolute;
+                text-align: left;
+                top: 45%;
+                transform: translateY(-50%);
+                width: 470px;
+            }
+        }
+    }
+
+    section.anuncie-gratis {
+        div.formulario-anuncio {
+            flex: 0 1 40%;
+            padding: 0 70px;
+        }
+        
+        form.form-anuncio {
+            background: $branco;
+            border-radius: 30px;
+            box-shadow: 0 0 20px 5px rgba($preto, 0.1);
+            padding: 15px 20px 25px;
+            h2 {
+                color: $preto;
+                font: 600 34px $fonte_padrao;
+                margin: 0 0 40px;
+                text-align: center;
+            }
+            input {
+                background: $branco;
+                border: 1px solid $preto;
+                border-radius: 10px;
+                color: $preto;
+                font: normal 16px $fonte_padrao;
+                margin-bottom: 40px;
+                padding: 20px;
+                width: 100%;
+                &:focus {
+                    border-color: $azul;
+                    box-shadow: none;
+                    outline: 0;
+                    color: $azul;
+                }
+            }
+            button[type="submit"] {
+                background: $vermelho;
+                border: 1px solid $preto;
+                border-radius: 10px;
+                color: $branco;
+                font: bold 26px $fonte_padrao;
+                height: 60px;
+                width: 100%;
+                &:hover {
+                    // background: darken($vermelho, 10%);
+                    background: $azul;
+                }
+            }
+        }
+
+        figure.icon {
+            margin: 70px auto 0;
+            width: 38%;
+        }
+
+        div.descricao-anuncio {
+            flex: 0 1 60%;
+            padding: 0 100px;
+            p {
+                font: normal 24px/34px $fonte_padrao;
+            }
+        }
+    }
+
+    section.contrate-gestora {
+        background: linear-gradient($branco 15%, $azul 15%);
+        margin: 100px 0 0;
+        position: relative;
+        &::before {
+            background: $vermelho;
+            content: '';
+            display: block;
+            height: 20px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 50%;
+        }
+        figure.banner-gestora {
+            position: relative;
+            img {
+                left: -210px;
+                position: absolute;
+                top: 40px;
+                max-width: 970px;
+            }
+        }
+        div.descricao-gestora {
+            margin: 200px 0 100px;
+            max-width: 400px;
+            h2 {
+                color: $branco;
+                font: 600 42px $fonte_padrao;
+            }
+            p {
+                color: $branco;
+                font: normal 27px/37px $fonte_padrao;
+            }
+        }
+    }
+
+    section.gestao-digital {
+        background: $branco;
+        padding: 100px 0;
+        div.descricao-digital {
+            flex: 0 1 45%;
+            figure.icon {
+                margin-bottom: 50px;
+                img {
+                    max-width: 70px;
+                }
+            }
+            h2 {
+                color: $preto;
+                font: 600 95px/99px $fonte_padrao;
+            }
+        }
+        figure.banner-digital {
+            flex: 0 1 50%;
+            img {
+                max-width: 590px;
+            }
+        }
+    }
+
+    section.sem-preocupacao {
+        background: linear-gradient($azul 30%, $branco 30%);
+        overflow: hidden;
+        padding: 200px 0 80px;
+        figure.banner-preocupacao {
+            flex: 1 1 100%;
+            position: relative;
+            &::before {
+                background: $vermelho;
+                content: '';
+                display: block;
+                height: 165px;
+                left: -40px;
+                position: absolute;
+                bottom: 0;
+                width: 20px;
+            }
+            img {
+                max-width: 1500px;
+            }
+        }
+        h2 {
+            color: $preto;
+            flex: 1 1 100%;
+            font: 600 70px/72px $fonte_padrao;
+            margin: 70px 0;
+        }
+        div.descricao-sem-preocupacao {
+            flex: 1 1 100%;
+            position: relative;
+            div.flex-item {
+                flex: 0 1 35%;
+                margin: 0 70px;
+            }
+            h3 {
+                color: $preto;
+                font: 600 36px/44px $fonte_padrao;
+                margin-bottom: 50px;
+            }
+            ol.lista-numerica {
+                li {
+                    font: normal 22px/32px $fonte_padrao;
+                    margin-bottom: 30px;
+                }
+            }
+            &::after {
+                background: $vermelho;
+                content: '';
+                display: block;
+                height: 20px;
+                left: 0;
+                position: absolute;
+                bottom: -40px;
+                width: 170px;
+            }
+        }
+    }
+    
+    section.opcao-atendimento {
+        background: $azul;
+        border-top: 40px solid $cinza;
+        padding: 100px 0;
+        h2 {
+            color: $branco;
+            flex: 1 1 100%;
+            font: 600 36px $fonte_padrao;
+            text-align: center;
+        }
+        div.flex-item {
+            flex: 0 1 40%;
+            margin-top: 70px;
+            padding: 0 50px;
+            figure.img-opcao {
+                border-top: 10px solid $vermelho;
+                position: relative;
+                img {}
+                figcaption {
+                    background: $vermelho;
+                    border-radius: 10px;
+                    color: $branco;
+                    font: 900 21px/26px $fonte_padrao;
+                    margin: -35px auto 0;
+                    padding: 20px 10px;
+                    position: relative;
+                    text-align: center;
+                    width: 80%;
+                }
+            }
+            h3 {
+                color: $branco;
+                font: bold 21px $fonte_padrao;
+                margin: 50px 0 30px;
+            }
+            p {
+                color: $branco;
+                font: normal 22px $fonte_padrao;
+            }
+            div.observacao {
+                border: 1px solid $branco;
+                border-radius: 20px;
+                color: $branco;
+                margin: 50px 0;
+                padding: 20px;
+                h4, p {
+                    font: 600 21px/32px $fonte_padrao;
+                    margin: 0;
+                }
+                p {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    main.site-main {
+        section.banner-principal {
+            overflow: hidden;
+            figure.banner {
+                padding: 50px 0 100px;
+                img {
+                    max-width: 740px;
+                }
+                figcaption {
+                    font: bold 50px/60px $fonte_padrao;
+                    height: auto;
+                    left: -5%;
+                    text-align: center;
+                    top: 80%;
+                    width: 100%;
+                }
+            }
+        }
+
+        section.anuncie-gratis {
+            div.formulario-anuncio {
+                padding: 0;
+            }
+            div.descricao-anuncio {
+                padding: 0 30px;
+            }
+        }
+
+        section.contrate-gestora {
+            figure.banner-gestora {
+                img {
+                    left: 0;
+                    max-width: 100%;
+                    position: relative;
+                }
+            }
+            div.descricao-gestora {
+                margin: 70px auto 100px;
+                max-width: 100%;
+                text-align: center;
+                h2 {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        section.gestao-digital {
+            div.descricao-digital {
+                flex: 1 1 100%;
+                order: 2;
+                text-align: center;
+                h2 {
+                    font: 600 65px/80px $fonte_padrao;
+                }
+            }
+            figure.banner-digital {
+                flex: 1 1 100%;
+                order: 1;
+                text-align: center;
+            }
+        }
+
+        section.sem-preocupacao {
+            background: linear-gradient($azul 18%, $branco 18%);
+            padding: 80px 0;
+            figure.banner-preocupacao {
+                img {
+                    max-width: 900px;
+                }
+            }
+            h2 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            div.descricao-sem-preocupacao {
+                div.flex-item {
+                    flex: 0 1 45%;
+                    margin: 0;
+                }
+            }
+        }
+
+        section.opcao-atendimento {
+            div.flex-item {
+                flex: 1 1 50%;
+                padding: 0 20px;
+                figure.img-opcao {
+                    figcaption {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    main.site-main {
+        section.banner-principal {
+            figure.banner {
+                padding: 50px 0;
+                img {
+                    max-width: 480px;
+                }
+                figcaption {
+                    position: relative;
+                    font-size: 30px;
+                    line-height: 40px;
+                    padding: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        section.anuncie-gratis {
+            div.formulario-anuncio {
+                padding: 0;
+                flex: 1;
+            }
+            div.descricao-anuncio {
+                padding: 0 30px;
+                flex: 1;
+            }
+        }
+
+        section.gestao-digital {
+            div.descricao-digital {
+                max-width: 100%;
+                h2 {
+                    font: 600 50px/60px $fonte_padrao;
+                }
+            }
+            figure.banner-digital {
+                order: 1;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        section.sem-preocupacao {
+            background: linear-gradient($azul 10%, $branco 10%);
+            padding: 80px 0;
+            figure.banner-preocupacao {
+                &::before {
+                    left: -15px;
+                    bottom: -60px;
+                }
+                img {
+                    max-width: 450px;
+                }
+            }
+            h2 {
+                font-size: 50px;
+                line-height: 60px;
+            }
+            div.descricao-sem-preocupacao {
+                div.flex-item {
+                    flex: 1;
+                    margin: 0 0 20px;
+                }
+            }
+        }
+
+        section.opcao-atendimento {
+            div.flex-item {
+                flex: 1 1 50%;
+                padding: 0 20px;
+                figure.img-opcao {
+                    figcaption {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
